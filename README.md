@@ -1,10 +1,80 @@
-# VendorShield AI 🛡️
+# VendorShield AI 
 
 VendorShield AI is a comprehensive enterprise-grade third-party risk management (TPRM) and vendor compliance platform. It enables organizations to assess, monitor, and mitigate cybersecurity risks across their vendor supply chain, ensuring compliance with global security frameworks.
 
 ---
+##  Cybersecurity Frameworks Integrated
 
-## 🚀 Application Features & Cybersecurity Framework Alignment
+The platform directly aligns with and helps track the following frameworks:
+- **NIST CSF**: Covers Identify (Asset Management, Risk Assessment), Protect (Information Protection Processes), Detect (Security Continuous Monitoring), and Respond (Response Planning).
+- **ISO/IEC 27001**: Aids in managing compliance controls under Supplier Relationships (A.15), Information Security Incident Management (A.16), and Compliance (A.18).
+- **CIS Controls**: Focused on CIS Control 15 (Service Provider Management) and CIS Control 18 (Incident Response and Management).
+- **MITRE ATT&CK**: Offers mapping to techniques to classify and respond to active threat vectors in the threat center.
+- **SOC 2 Type II**: Supports audit readiness for the Trust Services Criteria (specifically Security and Confidentiality categories).
+- **PCI DSS**: Pre-configured compliance checklist for vendors handling cardholder data.
+
+---
+
+##  Problem Statement
+
+Organizations increasingly rely on third-party vendors for critical business operations, cloud services, software solutions, and data processing. However, managing vendor cybersecurity risk has become a major challenge due to fragmented risk data, inconsistent assessments, outdated compliance records, and limited visibility into vendor security posture.
+
+### Key Challenges
+
+- Organizations work with hundreds or thousands of vendors, making risk tracking complex and time-consuming.
+- Critical vendor information such as security certifications, breach history, compliance status, and contractual obligations is often scattered across multiple systems.
+- Security and compliance teams struggle to quickly determine whether a vendor is secure, compliant, and suitable for business engagement.
+- Missing visibility into high-risk vendors can lead to security breaches, regulatory penalties, financial losses, and reputational damage.
+- Manual assessment and monitoring processes delay vendor onboarding and risk remediation activities.
+
+### Business Impact
+
+- Increased likelihood of third-party security breaches.
+- Regulatory and compliance violations (GDPR, NIST, ISO 27001, SOC 2, PCI DSS).
+- Delayed vendor onboarding and procurement processes.
+- Lack of evidence-based decision-making for vendor risk management.
+- Difficulty maintaining audit-ready documentation and compliance records.
+
+---
+
+##  How VendorShield AI Solves the Problem
+
+VendorShield AI provides a centralized and intelligent Third-Party Risk Management (TPRM) platform that enables organizations to assess, monitor, and mitigate vendor cybersecurity risks throughout the vendor lifecycle.
+
+### Solution Highlights
+
+**Centralized Vendor Repository**
+- Maintains a complete inventory of vendors, security profiles, certifications, and risk ratings in a single platform.
+
+**Automated Risk Assessments**
+- Conducts structured security questionnaires and evaluates vendor risk posture using cybersecurity best practices.
+
+**Continuous Risk Monitoring**
+- Tracks vendor compliance status, threat intelligence feeds, vulnerabilities, and security events in real time.
+
+ **Compliance Management**
+- Maps vendor controls against NIST CSF, ISO 27001, SOC 2, CIS Controls, MITRE ATT&CK, and PCI DSS requirements.
+
+ **Remediation Tracking**
+- Identifies security gaps and tracks corrective actions until issues are resolved.
+
+ **AI-Powered Vendor Copilot**
+- Provides intelligent recommendations, compliance guidance, and remediation suggestions using AI-driven analysis.
+
+**Role-Based Access Control (RBAC)**
+- Ensures secure access to sensitive vendor information through Admin, Analyst, and Auditor roles.
+
+### Expected Outcomes
+
+- Improved visibility into vendor cybersecurity risks.
+- Faster and more accurate vendor risk assessments.
+- Enhanced compliance and audit readiness.
+- Reduced likelihood of third-party security incidents.
+- Better decision-making through real-time risk intelligence and analytics.
+
+---
+
+##  Application Features & Cybersecurity Framework Alignment
 
 Below is a detailed mapping of the features available in VendorShield AI and the specific cybersecurity frameworks and controls they align with:
 
@@ -22,7 +92,44 @@ Below is a detailed mapping of the features available in VendorShield AI and the
 
 ---
 
-## 🛠️ Technology Stack
+##  Demo Credentials
+
+Use the following demo accounts to explore the platform with different role-based permissions.
+
+###  Admin User
+| Field | Value |
+|---------|---------|
+| Full Name | Admin User |
+| Email | admin@vendorshield.ai |
+| Role | Admin |
+| Password | admin123 |
+
+**Access Level:** Full platform access including Vendor Management, Risk Assessments, Compliance Tracking, Threat Monitoring, User Management, and System Settings.
+
+###  Analyst User
+| Field | Value |
+|---------|---------|
+| Full Name | Analyst User |
+| Email | analyst@vendorshield.ai |
+| Role | Analyst |
+| Password | analyst123 |
+
+**Access Level:** Risk assessments, vendor reviews, remediation tracking, dashboards, and threat monitoring.
+
+###  Auditor User
+| Field | Value |
+|---------|---------|
+| Full Name | Auditor User |
+| Email | auditor@vendorshield.ai |
+| Role | Auditor |
+| Password | auditor123 |
+
+**Access Level:** Read-only access to compliance reports, audit evidence, vendor assessments, and security documentation.
+
+> **Note:** Select the matching role during login and use the exact full name, email, and password combination listed above.
+
+
+##  Technology Stack
 
 ### Frontend
 - **Framework**: React 18 with TypeScript
@@ -40,7 +147,7 @@ Below is a detailed mapping of the features available in VendorShield AI and the
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 Follow these steps to run the application locally:
 
@@ -85,13 +192,3 @@ python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 The backend API documentation will be available at `http://localhost:8000/docs`.
 
 ---
-
-## 🔒 Cybersecurity Frameworks Integrated
-
-The platform directly aligns with and helps track the following frameworks:
-- **NIST CSF**: Covers Identify (Asset Management, Risk Assessment), Protect (Information Protection Processes), Detect (Security Continuous Monitoring), and Respond (Response Planning).
-- **ISO/IEC 27001**: Aids in managing compliance controls under Supplier Relationships (A.15), Information Security Incident Management (A.16), and Compliance (A.18).
-- **CIS Controls**: Focused on CIS Control 15 (Service Provider Management) and CIS Control 18 (Incident Response and Management).
-- **MITRE ATT&CK**: Offers mapping to techniques to classify and respond to active threat vectors in the threat center.
-- **SOC 2 Type II**: Supports audit readiness for the Trust Services Criteria (specifically Security and Confidentiality categories).
-- **PCI DSS**: Pre-configured compliance checklist for vendors handling cardholder data.
